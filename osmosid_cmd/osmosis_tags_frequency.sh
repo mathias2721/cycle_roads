@@ -1,0 +1,40 @@
+osmosis \
+  --read-pbf file="./Data/osm_map/japan-latest.osm.pbf" \
+  --tf accept-ways highway=cycleway \
+  --tf accept-ways bicycle=designated \
+  --tf accept-ways foot=designated \
+  --tf accept-ways embankment=yes \
+  --tf accept-ways segregated=no \
+  --tf accept-ways motor_vehicle=no \
+  --tf accept-ways segregated=yes \
+  --tf accept-ways crossing=zebra \
+  --tf accept-ways highway=trunk \
+  --tf accept-ways bicycle=yes \
+  --tf accept-ways access=no \
+  --tf accept-ways foot=yes \
+  --tf accept-ways tunnel=yes \
+  --tf accept-ways bridge=yes \
+  --tf accept-ways crossing=unmarked \
+  --tf accept-ways surface=paved \
+  --tf accept-ways horse=no \
+  --tf accept-ways highway=primary \
+  --tf accept-ways yh:WIDTH=1.5m〜3.0m \
+  --tf accept-ways yh:TOTYUMONO=供用中 \
+  --tf accept-ways layer=1 \
+  --tf accept-ways yh:WIDTH=3.0m〜5.5m \
+  --tf accept-ways tracktype=grade1 \
+  --tf accept-ways yh:WIDTH_RANK=3 \
+  --tf accept-ways smoothness=intermediate \
+  --tf accept-ways yh:STRUCTURE=地上 \
+  --tf accept-ways highway=secondary \
+  --tf accept-ways oneway=no \
+  --tf accept-ways yh:WIDTH_RANK=4 \
+  --tf accept-ways crossing=traffic_signals \
+  --tf accept-ways crossing=uncontrolled \
+  --tf accept-ways railway=abandoned \
+  --tf accept-ways motorcar=no \
+  --tf accept-ways crossing=marked \
+  --tf accept-ways tactile_paving=no \
+  --used-way \
+  --used-node \
+  --write-xml file="./Data/selected_roads.xml"
